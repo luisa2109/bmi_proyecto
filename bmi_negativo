@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    float peso, altura, bmi; 
+    
+ do{ 
+     printf("Ingrese el peso en kg:");
+     scanf("%f", &peso);
+     if (peso<0){
+         printf("Error: el peso no puede ser negativo.Intente de nuevo.\n");
+     }
+ } while(peso<0);
+ do{ 
+     printf("Ingrese la altura en metros:");
+     scanf("%f", &altura);
+     if(altura<=0){
+         printf("Error:la altura debe ser mayor que 0.Intente de nuevo.\n");
+     }
+ } while(altura <= 0);
+ bmi=peso/(altura*altura);
+ 
+ printf("\n Su indice de masa corporal es: %.2f\n",bmi);
+ printf("\n Indice\t\t | Condicion\n");
+ printf("---------------------------------\n");
+ 
+ if(bmi<18.5){
+     printf("<18.5\t\t| Bajo peso\n");
+     printf("Usted se encuentra en la categoria: Bajo peso\n");
+ } else if(bmi<25.0){
+     printf("18.5 a 24.9\t | Normal\n");
+     printf("Usted se encuentra en la categoria: Normal\n");
+ } else if(bmi<30.0){ 
+     printf("25.0 a 29.9\t| Sobrepeso\n");
+     printf("Usted se encuentra en la categoria: Obesidad\n");
+ }
+ return 0;
+}
