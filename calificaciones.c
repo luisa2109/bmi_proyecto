@@ -1,6 +1,3 @@
-//https://github.com/luisa2109/bmi_proyecto
-//https://github.com/luisa2109/bmi_proyecto/edit/main/calificaciones.c
-
 #include <stdio.h>
 
 int main()
@@ -26,3 +23,5 @@ int main()
    
     return 0;
 }
+
+//repositorio:https://github.com/luisa2109/bmi_proyecto
