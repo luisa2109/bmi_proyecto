@@ -1,5 +1,5 @@
 /*
- * tp8.c - Gestión de piezas con punteros
+ * tp8.c - Uso de punteros en lenguaje C
  * https://github.com/luisa2109/bmi_proyecto/tree/main
  */
 
